@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<link
+	href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&amp;display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet" href="./style.css" type="text/css" />
+</head>
+<body>
+	<div class="main">
+		<div class="sign-part">
+			<svg class="backimg" viewBox="0 0 828 1080" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="5.5" cy="565.5" rx="822.5" ry="954.5"
+					fill="#673AB7" />
+            </svg>
+			<h5
+				style="position: absolute; bottom: 0; right: 0; z-index: 5; color: #000;"
+				id="topic"></h5>
+			<a href="index.html"
+				style="position: absolute; bottom: 0; left: 0; z-index: 5"
+				id="topic">Return to Home</a>
+			<form class="sign-form" action="RegisterServlet" method="post">
+				<div class="form-row col">
+					<label id="topic" for="name">Enter name</label> <input type="text"
+						name="name" id="name" placeholder="Enter User Name">
+				</div>
+				<div class="form-row col">
+					<label id="topic" for="name">Enter password</label> <input
+						type="text" name="password" id="password"
+						placeholder="Enter Password">
+				</div>
+				<div class="form-row">
+					<button class="signin-btn" type="submit">Register</button>
+				</div>
+			</form>
+
+		</div>
+		<div class="vault-part">
+			<div class="status">
+				<h1>Create Account</h1>
+			</div>
+			<div class="vault-door-outer">
+				<div class="vault-door-inner">
+					<div class="vault-door-lock-shadow"></div>
+					<div class="vault-door-lock-wrapper">
+						<div class="vault-door-lock vault-door-circle"></div>
+						<div class="vault-door-lock vault-door-pistons">
+							<div class="piston piston1"></div>
+							<div class="piston piston2"></div>
+							<div class="piston piston3"></div>
+							<div class="piston piston4"></div>
+						</div>
+					</div>
+					<div class="vault-door-handle-shadow"></div>
+					<div class="vault-door-handle-long-shadow"></div>
+					<div class="vault-door-handle">
+						<div class="handle-bar bar1"></div>
+						<div class="handle-bar bar2"></div>
+					</div>
+				</div>
+			</div>
+			<div class="msg">
+				<h1>Enter credentials to create your account</h1>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+</html>

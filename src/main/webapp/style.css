@@ -1,0 +1,247 @@
+@charset "ISO-8859-1";
+
+body,
+html {
+  background-color: #00bcd4;
+  width: 100vw;
+  max-width: 99vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
+}
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  flex-wrap: wrap;
+}
+
+.sign-part {
+  width: 40%;
+  display: flex;
+  height: 100vh;
+}
+.backimg {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  z-index: 0;
+}
+.sign-form {
+  height: 100%;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 4vw;
+}
+input {
+  background-color: #cbefff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: #08202c;
+  border-color: #b3e5fc;
+  min-width: 100%;
+  padding: 15px;
+  margin: 30px;
+}
+#topic {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.form-row {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+}
+.col {
+  flex-direction: column;
+}
+.vault-part {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.signin-btn {
+  background: none;
+  border: none;
+  height: 36px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  font-family: "Quicksand";
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #00bcd4;
+  font-size: 18px;
+  padding: 5px 20px 5px 20px;
+  cursor: default;
+  color: #ffffff;
+  text-decoration: none;
+}
+.signin-btn:hover {
+  background-color: #023c7e;
+  transition: all 0.5s;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status > h1 {
+  font-size: 3.5rem;
+}
+.msg > a {
+  color: #08202c;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .sign-part,
+  .vault-part {
+    width: 100%;
+  }
+  .sign-part {
+    height: 40vh;
+    margin: 0;
+    padding: 0%;
+  }
+  .sign-part > .backimg {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    writing-mode: tb-rl;
+    -ms-writing-mode: bt-rl;
+    height: 130vw;
+    margin-top: -20vh;
+  }
+}
+/* Vault part*/
+.vault-door-outer {
+  position: relative;
+  width: 50vh;
+  height: 50vh;
+  background: #b3e5fc;
+  border-radius: 6%;
+  box-shadow: 0px 0px 41px #7c4dff;
+}
+.vault-door-outer .vault-door-inner {
+  position: absolute;
+  margin: 10%;
+  width: 78%;
+  height: 78%;
+  background: #03a9f4;
+  border-radius: 25%;
+}
+.vault-door-outer .vault-door-inner .vault-door-lock-shadow {
+  position: absolute;
+  width: 68%;
+  height: 36%;
+  background: -webkit-linear-gradient(rgba(160, 160, 160, 0.2), transparent);
+  margin: 34% 18%;
+  transform: rotate(-45deg);
+  transition: all 0.05s ease-out;
+}
+.vault-door-outer .vault-door-inner .vault-door-lock {
+  background: #023c7e;
+}
+.vault-door-outer .vault-door-inner .vault-door-circle {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border-radius: 50%;
+}
+.vault-door-outer .vault-door-inner .vault-door-pistons {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  margin: 47% 6.5%;
+  background: none;
+}
+.vault-door-outer .vault-door-inner .vault-door-pistons .piston {
+  position: absolute;
+  background: #0288d1;
+  width: 100%;
+  height: 7%;
+  border-radius: 8px;
+  transition: all 0.05s ease-out;
+}
+.vault-door-outer .vault-door-inner .vault-door-pistons .piston.piston2 {
+  transform: rotate(45deg);
+}
+.vault-door-outer .vault-door-inner .vault-door-pistons .piston.piston3 {
+  transform: rotate(90deg);
+}
+.vault-door-outer .vault-door-inner .vault-door-pistons .piston.piston4 {
+  transform: rotate(135deg);
+}
+.vault-door-outer .vault-door-inner .vault-door-handle-shadow {
+  position: absolute;
+  background: #00499c;
+  width: 40%;
+  height: 40%;
+  margin: 32%;
+  border-radius: 50%;
+}
+.vault-door-outer .vault-door-inner .vault-door-handle-long-shadow {
+  position: absolute;
+  background: -webkit-linear-gradient(#00499c, transparent);
+  width: 45%;
+  height: 45%;
+  margin: 50%;
+  transform: rotate(-45deg);
+}
+.vault-door-outer .vault-door-inner .vault-door-handle {
+  position: absolute;
+  border: solid 2.5vh #0288d1;
+  width: 34%;
+  height: 34%;
+  margin: 28%;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.vault-door-outer .vault-door-inner .vault-door-handle .handle-bar {
+  position: absolute;
+  background: #0288d1;
+  height: 18%;
+  width: 115%;
+  margin: 40% -8%;
+}
+.vault-door-outer .vault-door-inner .vault-door-handle .handle-bar.bar1 {
+  transform: rotate(45deg);
+}
+.vault-door-outer .vault-door-inner .vault-door-handle .handle-bar.bar2 {
+  transform: rotate(135deg);
+}
+.vault-door-outer.vault-door-outer:hover .vault-door-lock-shadow {
+  width: 40%;
+  margin: 44% 6.5%;
+  transition: all 0.5s ease-out;
+}
+.vault-door-outer.vault-door-outer:hover .piston {
+  width: 88%;
+  margin-left: 5%;
+  margin-right: 5%;
+  transition: all 0.5s ease-out;
+}
+.vault-door-outer.vault-door-outer:hover .vault-door-handle {
+  transform: rotate(-180deg);
+  transition: all 1s ease-in-out;
+}
